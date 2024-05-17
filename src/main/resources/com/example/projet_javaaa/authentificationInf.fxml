@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane xmlns:fx="http://javafx.com/fxml"
+            fx:controller="com.example.projet_javaaa.AuthentificationInfController"
+            prefHeight="400.0" prefWidth="600.0">
+
+    <VBox alignment="TOP_CENTER" spacing="20" prefHeight="200.0" prefWidth="300.0" layoutX="135.0" layoutY="100.0">
+        <Label text="Authentification Infirmier" fx:id="titleLabel" />
+        <TextField fx:id="usernameField" promptText="Nom d'utilisateur" />
+        <PasswordField fx:id="passwordField" promptText="Mot de passe" />
+        <Button fx:id="loginButton" text="Se connecter" onAction="#loginInf" />
+        <Label fx:id="errorMessageLabel" textFill="red" visible="false" />
+    </VBox>
+</AnchorPane>

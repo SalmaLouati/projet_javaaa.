@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/17.0.2-ea" fx:controller="com.example.projet_javaaa.AuthentificationController">
+
+    <VBox alignment="TOP_CENTER" layoutX="135.0" layoutY="100.0" prefHeight="200.0" prefWidth="300.0" spacing="20">
+        <Label fx:id="welcomeLabel" prefHeight="30.0" prefWidth="147.0" styleClass="welcome-label" text="S'authentifier" textFill="#12316d">
+            <font>
+                <Font name="Candara" size="23.0" />
+            </font>
+        </Label>        <TextField fx:id="usernameField" promptText="Nom d'utilisateur" />
+        <PasswordField fx:id="passwordField" promptText="Mot de passe" />
+        <Button fx:id="loginButton" onAction="#login" text="Se connecter" />
+        <Label fx:id="errorMessageLabel" textFill="red" visible="false" />
+    </VBox>
+</AnchorPane>

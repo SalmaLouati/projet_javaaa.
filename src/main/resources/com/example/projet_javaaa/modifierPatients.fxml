@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="450.0" prefWidth="600.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/17.0.2-ea" fx:controller="com.example.projet_javaaa.ModifierPatientController">
+
+    <VBox alignment="TOP_CENTER" layoutX="25.0" layoutY="25.0" prefHeight="400.0" prefWidth="550.0" spacing="20">
+        <Label fx:id="welcomeLabel" prefHeight="30.0" prefWidth="290.0" styleClass="welcome-label" text="Modifier la fiche d'un patient" textFill="#12316d">
+            <font>
+                <Font name="Candara" size="23.0" />
+            </font>
+        </Label>
+        <TextField fx:id="patientIdField" editable="false" promptText="ID Patient" />
+        <TextField fx:id="firstNameField" promptText="Prénom" />
+        <TextField fx:id="lastNameField" promptText="Nom" />
+        <TextField fx:id="emailField" promptText="Adresse e-mail" />
+        <DatePicker fx:id="dateOfBirthPicker" promptText="Date de naissance" />
+        <TextArea fx:id="medicalHistoryTextArea" promptText="Historique médical" wrapText="true" />
+        <Button fx:id="saveButton" onAction="#enregistrer" text="Enregistrer" />
+        <Button fx:id="cancelButton" onAction="#quitter" text="Annuler" />
+    </VBox>
+</AnchorPane>

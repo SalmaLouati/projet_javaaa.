@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane xmlns:fx="http://javafx.com/fxml"
+            fx:controller="com.example.projet_javaaa.InscriptionInfController"
+            prefHeight="450.0" prefWidth="600.0">
+
+    <VBox alignment="TOP_CENTER" spacing="20" prefHeight="400.0" prefWidth="350.0" layoutX="125.0" layoutY="25.0">
+        <Label text="Inscription Infirmier" fx:id="titre" />
+        <TextField fx:id="prenomField" promptText="Prénom" />
+        <TextField fx:id="nomField" promptText="Nom" />
+        <TextField fx:id="emailField" promptText="Adresse e-mail" />
+        <PasswordField fx:id="mdpField" promptText="Mot de passe" />
+        <PasswordField fx:id="confirmPasswordField" promptText="Confirmer le mot de passe" />
+        <Button fx:id="inscription" text="S'inscrire" onAction="#inscriptionInf" />
+        <Label fx:id="errorMessageLabel" textFill="red" visible="false" />
+    </VBox>
+</AnchorPane>
+
